@@ -4,11 +4,11 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.validation.constraints.Min;
+import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 import org.hibernate.validator.constraints.Range;
 import org.springframework.format.annotation.DateTimeFormat;
-import javax.validation.constraints.Min;
-import javax.validation.constraints.NotNull;
+
 import java.util.Date;
 
 /**
@@ -18,6 +18,7 @@ import java.util.Date;
  */
 @Data
 public class Query {
+
   @NotNull(message = "页码不能为空")
   @Min(value = 1, message = "页码最小值为 1")
   @Schema(description = "当前页码", required = true, defaultValue = "1")
@@ -44,10 +45,8 @@ public class Query {
   @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
   Date endTime;
 
-  @Schema(description = "用户code", hidden = true)
-  String ucode;
-
   public <T> Page<T> buildPage() {
 	return new Page<T>(this.page, this.limit);
   }
+
 }
