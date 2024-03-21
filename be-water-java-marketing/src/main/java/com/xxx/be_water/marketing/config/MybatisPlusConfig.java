@@ -28,8 +28,4 @@ public class MybatisPlusConfig {
     return mybatisPlusInterceptor;
   }
 
-  @Bean
-  public FieldMetaObjectHandler fieldMetaObjectHandler(){
-    return new FieldMetaObjectHandler();
-  }
 }
