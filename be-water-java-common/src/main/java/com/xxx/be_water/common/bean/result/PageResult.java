@@ -22,5 +22,8 @@ public class PageResult<T> implements Serializable {
 
   @Schema(description = "列表数据")
   private List<T> list;
-
+  public PageResult(List<T> list, long total) {
+    this.list = list;
+    this.total = (int)total;
+  }
 }
