@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="net.water.generator.dao.TableFieldDao">
+<mapper namespace="com.be.water.generator.dao.TableFieldDao">
 
-    <select id="getByTableId" resultType="net.water.generator.entity.TableFieldEntity">
+    <select id="getByTableId" resultType="com.be.water.generator.entity.TableFieldEntity">
         select *
         from gen_table_field
         where table_id = #{value}
