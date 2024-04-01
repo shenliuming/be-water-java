@@ -1,0 +1,35 @@
+server:
+  tomcat:
+    uri-encoding: UTF-8
+    threads:
+      max: 100
+      min-spare: 30
+  port: 8008
+  servlet:
+    context-path: /
+    session:
+      cookie:
+        http-only: true
+
+
+spring:
+  datasource:
+    url: jdbc:mysql://bewater-mysql:3306/bewater?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&nullCatalogMeansCurrent=true
+    username: bewater-mysql
+    password: Lbr4ERLyqOcvGxumLSEtGxzCZl87q0PB
+    hikari:
+      connection-timeout: 30000     # 等待连接池分配链接的最大时长（毫秒），超过这个时长还没有可用的连接则发生 SQLException，默认：30 秒
+      minimum-idle: 10              # 最小空闲连接数
+      maximum-pool-size: 10         # 最大连接数
+      auto-commit: true             # 自动提交
+      idle-timeout: 600000          # 连接超时的最大时长（毫秒），超时则被释放（retired），默认：10 分钟
+      max-lifetime: 1800000         # 连接的生命时长（毫秒），超时而且没被使用则被释放（retired），默认： 30 分钟
+      connection-test-query: SELECT 1
+      pool-name: HikariCP
+  data:
+    redis:
+      database: 2
+      port: 6379
+      host: bewater-redis
+      #password: Fi5GEA03D3yZ8S14XSSG044hk8ovpgy0
+      timeout: 6000ms

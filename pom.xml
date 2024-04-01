@@ -36,6 +36,7 @@
 	<properties>
 		<revision>4.0.0</revision>
 		<skipTests>true</skipTests>
+
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>17</java.version>
@@ -63,6 +64,7 @@
 		<ip2region.version>2.7.0</ip2region.version>
 		<bouncycastle.version>1.69</bouncycastle.version>
 		<transmittable.thread.local.version>2.14.2</transmittable.thread.local.version>
+
 	</properties>
 
 	<dependencies>
@@ -93,6 +95,7 @@
 				<artifactId>dynamic-datasource-spring-boot3-starter</artifactId>
 				<version>${dynamic-datasource.version}</version>
 			</dependency>
+
 			<dependency>
 				<groupId>org.redisson</groupId>
 				<artifactId>redisson-spring-boot-starter</artifactId>
