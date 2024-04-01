@@ -20,7 +20,7 @@ public class SwaggerConfig {
     public GroupedOpenApi userApi() {
         String[] paths = {"/**"};
         String[] packagedToMatch = {"com.be.water"};
-        return GroupedOpenApi.builder().group("Be-waterBoot")
+        return GroupedOpenApi.builder().group("be-water")
                 .pathsToMatch(paths)
                 .packagesToScan(packagedToMatch).build();
     }
@@ -31,8 +31,8 @@ public class SwaggerConfig {
         contact.setName("阿沐 babamu@126.com");
 
         return new OpenAPI().info(new Info()
-                .title("Be-waterBoot")
-                .description("Be-waterBoot")
+                .title("be-water")
+                .description("be-water")
                 .contact(contact)
                 .version("3.0")
                 .termsOfService("https://be-water.net")

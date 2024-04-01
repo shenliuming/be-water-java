@@ -1,6 +1,6 @@
 {
   "project": {
-    "packageName": "net.maku",
+    "packageName": "com.be.water",
     "version": "1.0.0",
     "backendPath": "D:\\generator\\maku-boot\\maku-server",
     "frontendPath": "D:\\generator\\maku-admin"
