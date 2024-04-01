@@ -2,12 +2,18 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.github.bewater</groupId>
+	<groupId>com.be.water</groupId>
 	<artifactId>be-water-java</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>${revision}</version>
 	<modules>
 		<module>be-water-java-common</module>
 		<module>be-water-java-marketing</module>
+		<module>be-water-java-new</module>
+		<module>be-water-java-system</module>
+		<module>be-water-java-module</module>
+		<module>be-water-java-api</module>
+		<module>be-water-framework</module>
+		<module>be-water-server</module>
 	</modules>
 	<name>be-water-java</name>
 	<description>Be like water, my friend</description>
@@ -21,98 +27,99 @@
 		</license>
 	</licenses>
 
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>3.2.2</version>
+	</parent>
+
 	<properties>
-		<maven.compiler.source>21</maven.compiler.source>
-		<maven.compiler.target>21</maven.compiler.target>
-		<maven.compiler.encoding>UTF-8</maven.compiler.encoding>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<revision>4.0.0</revision>
 		<skipTests>true</skipTests>
-		<spring-boot.version>3.2.3</spring-boot.version>
-		<lombok.version>1.18.8</lombok.version>
-		<easy-trans.version>2.1.6</easy-trans.version>
-		<weixin-java.version>4.6.0</weixin-java.version>
-		<okhttp.version>4.10.0</okhttp.version>
-		<fastjson.version>1.2.79</fastjson.version>
-		<druid.version>1.2.8</druid.version>
+
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<java.version>17</java.version>
 		<mybatisplus.version>3.5.5</mybatisplus.version>
-		<knife4j.version>3.0.3</knife4j.version>
-		<springdoc.version>1.6.8</springdoc.version>
-		<logstash.version>5.3</logstash.version>
-		<hutool.version>5.7.22</hutool.version>
+		<dynamic-datasource.version>4.1.3</dynamic-datasource.version>
+		<redisson.version>3.21.3</redisson.version>
+		<dameng.version>8.1.2.79</dameng.version>
+		<knife4j.version>4.4.0</knife4j.version>
+		<hutool.version>5.8.21</hutool.version>
 		<captcha.version>1.6.2</captcha.version>
-		<mapstruct.version>1.5.3.Final</mapstruct.version>
-		<junit.version>4.12</junit.version>
-		<mysql.version>8.0.33</mysql.version>
-		<redis.version>3.1.5</redis.version>
+		<mapstruct.version>1.5.5.Final</mapstruct.version>
+		<aliyun.oss.version>3.15.2</aliyun.oss.version>
+		<aliyun.dysmsapi.version>2.0.23</aliyun.dysmsapi.version>
+		<tencentcloud.sdk.version>3.1.574</tencentcloud.sdk.version>
+		<qiniu.version>7.12.1</qiniu.version>
+		<minio.version>8.5.1</minio.version>
+		<qcloud.cos.version>5.6.97</qcloud.cos.version>
+		<huaweicloud.obs.version>3.22.3</huaweicloud.obs.version>
+		<easyexcel.version>3.3.2</easyexcel.version>
+		<okio.version>3.3.0</okio.version>
+		<easytrans.version>3.0.0</easytrans.version>
+		<jsoup.version>1.16.1</jsoup.version>
+		<mybatis.spring.version>3.0.3</mybatis.spring.version>
+		<justauth.version>1.16.6</justauth.version>
+		<ip2region.version>2.7.0</ip2region.version>
+		<bouncycastle.version>1.69</bouncycastle.version>
+		<transmittable.thread.local.version>2.14.2</transmittable.thread.local.version>
+
 	</properties>
 
+	<dependencies>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>org.mapstruct</groupId>
+			<artifactId>mapstruct</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.mapstruct</groupId>
+			<artifactId>mapstruct-processor</artifactId>
+		</dependency>
+	</dependencies>
 
 	<dependencyManagement>
 		<dependencies>
-
-			<dependency>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-dependencies</artifactId>
-				<version>${spring-boot.version}</version>
-				<type>pom</type>
-				<scope>import</scope>
-			</dependency>
-
-			<dependency>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-starter-web</artifactId>
-				<version>${spring-boot.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-starter-validation</artifactId>
-				<version>${spring-boot.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-starter-data-redis</artifactId>
-				<version>${redis.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.mysql</groupId>
-				<artifactId>mysql-connector-j</artifactId>
-				<version>${mysql.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.github.xiaoymin</groupId>
-				<artifactId>knife4j-springdoc-ui</artifactId>
-				<version>${knife4j.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.springdoc</groupId>
-				<artifactId>springdoc-openapi-ui</artifactId>
-				<version>${springdoc.version}</version>
-			</dependency>
-
 			<dependency>
 				<groupId>com.baomidou</groupId>
 				<artifactId>mybatis-plus-boot-starter</artifactId>
 				<version>${mybatisplus.version}</version>
 			</dependency>
-
 			<dependency>
-				<groupId>net.logstash.logback</groupId>
-				<artifactId>logstash-logback-encoder</artifactId>
-				<version>${logstash.version}</version>
+				<groupId>com.baomidou</groupId>
+				<artifactId>dynamic-datasource-spring-boot3-starter</artifactId>
+				<version>${dynamic-datasource.version}</version>
 			</dependency>
 
-
+			<dependency>
+				<groupId>org.redisson</groupId>
+				<artifactId>redisson-spring-boot-starter</artifactId>
+				<version>${redisson.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.dameng</groupId>
+				<artifactId>DmJdbcDriver18</artifactId>
+				<version>${dameng.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.github.xiaoymin</groupId>
+				<artifactId>knife4j-openapi3-jakarta-spring-boot-starter</artifactId>
+				<version>${knife4j.version}</version>
+			</dependency>
 			<dependency>
 				<groupId>cn.hutool</groupId>
 				<artifactId>hutool-all</artifactId>
 				<version>${hutool.version}</version>
 			</dependency>
-
 			<dependency>
-				<groupId>org.projectlombok</groupId>
-				<artifactId>lombok</artifactId>
-				<optional>true</optional>
-				<version>${lombok.version}</version>
+				<groupId>com.github.whvcse</groupId>
+				<artifactId>easy-captcha</artifactId>
+				<version>${captcha.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.mapstruct</groupId>
@@ -121,53 +128,118 @@
 			</dependency>
 			<dependency>
 				<groupId>org.mapstruct</groupId>
-				<artifactId>mapstruct-jdk8</artifactId>
-				<version>${mapstruct.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.mapstruct</groupId>
 				<artifactId>mapstruct-processor</artifactId>
 				<version>${mapstruct.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>junit</groupId>
-				<artifactId>junit</artifactId>
-				<version>${junit.version}</version>
-				<scope>test</scope>
+				<groupId>com.aliyun.oss</groupId>
+				<artifactId>aliyun-sdk-oss</artifactId>
+				<version>${aliyun.oss.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.aliyun</groupId>
+				<artifactId>dysmsapi20170525</artifactId>
+				<version>${aliyun.dysmsapi.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.tencentcloudapi</groupId>
+				<artifactId>tencentcloud-sdk-java</artifactId>
+				<version>${tencentcloud.sdk.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.qiniu</groupId>
+				<artifactId>qiniu-java-sdk</artifactId>
+				<version>${qiniu.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>io.minio</groupId>
+				<artifactId>minio</artifactId>
+				<version>${minio.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.qcloud</groupId>
+				<artifactId>cos_api</artifactId>
+				<version>${qcloud.cos.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.huaweicloud</groupId>
+				<artifactId>esdk-obs-java-bundle</artifactId>
+				<version>${huaweicloud.obs.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.alibaba</groupId>
+				<artifactId>easyexcel</artifactId>
+				<version>${easyexcel.version}</version>
+			</dependency>
+			<dependency>
+				<artifactId>okio</artifactId>
+				<groupId>com.squareup.okio</groupId>
+				<version>${okio.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.fhs-opensource</groupId>
+				<artifactId>easy-trans-spring-boot-starter</artifactId>
+				<version>${easytrans.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.fhs-opensource</groupId>
+				<artifactId>easy-trans-mybatis-plus-extend</artifactId>
+				<version>${easytrans.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jsoup</groupId>
+				<artifactId>jsoup</artifactId>
+				<version>${jsoup.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.alibaba</groupId>
+				<artifactId>transmittable-thread-local</artifactId>
+				<version>${transmittable.thread.local.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.mybatis</groupId>
+				<artifactId>mybatis-spring</artifactId>
+				<version>${mybatis.spring.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>me.zhyd.oauth</groupId>
+				<artifactId>JustAuth</artifactId>
+				<version>${justauth.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.lionsoul</groupId>
+				<artifactId>ip2region</artifactId>
+				<version>${ip2region.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.bouncycastle</groupId>
+				<artifactId>bcprov-jdk15to18</artifactId>
+				<version>${bouncycastle.version}</version>
 			</dependency>
 		</dependencies>
-
 	</dependencyManagement>
-
-
-
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.8.0</version>
-				<configuration>
-					<source>${java.version}</source>
-					<target>${java.version}</target>
-					<encoding>UTF-8</encoding>
-				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-				<version>${spring-boot.version}</version>
-			</plugin>
-		</plugins>
-	</build>
 
 	<repositories>
 		<repository>
-			<id>central</id>
-			<url>https://maven.aliyun.com/repository/central</url>
-			<name>aliyun</name>
+			<id>public</id>
+			<name>阿里云公共仓库</name>
+			<url>https://maven.aliyun.com/repository/public/</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
 		</repository>
 	</repositories>
-
-
+	<pluginRepositories>
+		<pluginRepository>
+			<id>public</id>
+			<name>阿里云公共仓库</name>
+			<url>https://maven.aliyun.com/repository/public/</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</pluginRepository>
+	</pluginRepositories>
 </project>
