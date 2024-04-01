@@ -1,0 +1,26 @@
+package com.be.water.system.service;
+
+import com.be.water.framework.common.utils.PageResult;
+import com.be.water.framework.mybatis.service.BaseService;
+import com.be.water.system.entity.SysAttachmentEntity;
+import com.be.water.system.query.SysAttachmentQuery;
+import com.be.water.system.vo.SysAttachmentVO;
+
+import java.util.List;
+
+/**
+ * 附件管理
+ *
+ * @author 阿沐 babamu@126.com
+ * <a href="https://be-water.net">MAKU</a>
+ */
+public interface SysAttachmentService extends BaseService<SysAttachmentEntity> {
+
+    PageResult<SysAttachmentVO> page(SysAttachmentQuery query);
+
+    void save(SysAttachmentVO vo);
+
+    void update(SysAttachmentVO vo);
+
+    void delete(List<Long> idList);
+}

@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>be-water-java</artifactId>
-        <groupId>com.github.bewater</groupId>
-        <version>0.0.1-SNAPSHOT</version>
+        <groupId>com.be.water</groupId>
+        <version>${revision}</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <packaging>jar</packaging>
@@ -16,13 +16,17 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
         </dependency>
-        <dependency>
+        <!--<dependency>
             <groupId>com.github.xiaoymin</groupId>
             <artifactId>knife4j-springdoc-ui</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springdoc</groupId>
             <artifactId>springdoc-openapi-ui</artifactId>
+        </dependency>-->
+        <dependency>
+            <groupId>com.github.xiaoymin</groupId>
+            <artifactId>knife4j-openapi3-ui</artifactId>
         </dependency>
     </dependencies>
 
