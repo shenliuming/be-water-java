@@ -7,7 +7,7 @@ spring:
   datasource:
     # MySQL
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://8.134.48.80:3306/maku?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&nullCatalogMeansCurrent=true
+    url: jdbc:mysql://8.134.48.80:3306/be-water?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&nullCatalogMeansCurrent=true
     username: root
     password: satan@mysql
 
