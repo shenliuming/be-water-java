@@ -11,8 +11,6 @@ import java.io.InputStream;
 /**
  * 阿里云存储
  *
- * @author 阿沐 babamu@126.com
- * <a href="https://be-water.net">MAKU</a>
  */
 public class AliyunStorageService extends StorageService {
     

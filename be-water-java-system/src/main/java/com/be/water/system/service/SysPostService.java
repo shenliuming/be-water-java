@@ -11,8 +11,6 @@ import java.util.List;
 /**
  * 岗位管理
  *
- * @author 阿沐 babamu@126.com
- * <a href="https://be-water.net">MAKU</a>
  */
 public interface SysPostService extends BaseService<SysPostEntity> {
 

@@ -14,8 +14,6 @@ import java.util.Date;
 /**
  * 岗位管理
  *
- * @author 阿沐 babamu@126.com
- * <a href="https://be-water.net">MAKU</a>
  */
 @Data
 @Schema(description = "岗位管理")

@@ -14,8 +14,6 @@ import java.util.Date;
 /**
  * 机构列表
  *
- * @author 阿沐 babamu@126.com
- * <a href="https://be-water.net">MAKU</a>
  */
 @Data
 @EqualsAndHashCode(callSuper = true)

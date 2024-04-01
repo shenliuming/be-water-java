@@ -6,8 +6,6 @@ import org.springframework.stereotype.Service;
 /**
  * 测试定时任务
  *
- * @author 阿沐 babamu@126.com
- * <a href="https://be-water.net">MAKU</a>
  */
 @Slf4j
 @Service

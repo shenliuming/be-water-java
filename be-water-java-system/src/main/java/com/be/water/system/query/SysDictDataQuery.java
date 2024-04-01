@@ -9,8 +9,6 @@ import com.be.water.framework.common.query.Query;
 /**
  * 字典数据
  *
- * @author 阿沐 babamu@126.com
- * <a href="https://be-water.net">MAKU</a>
  */
 @Data
 @EqualsAndHashCode(callSuper = false)

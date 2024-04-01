@@ -10,8 +10,6 @@ import java.util.List;
 /**
  * 第三方登录配置
  *
- * @author 阿沐 babamu@126.com
- * <a href="https://be-water.net">MAKU</a>
  */
 @Mapper
 public interface SysThirdLoginConfigConvert {

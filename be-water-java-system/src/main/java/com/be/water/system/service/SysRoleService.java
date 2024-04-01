@@ -12,8 +12,6 @@ import java.util.List;
 /**
  * 角色
  * 
- * @author 阿沐 babamu@126.com
- * <a href="https://be-water.net">MAKU</a>
  */
 public interface SysRoleService extends BaseService<SysRoleEntity> {
 

@@ -28,8 +28,6 @@ import java.util.Map;
 /**
  * 第三方账号登录
  *
- * @author 阿沐 babamu@126.com
- * <a href="https://be-water.net">MAKU</a>
  */
 @RestController
 @RequestMapping("sys/third")

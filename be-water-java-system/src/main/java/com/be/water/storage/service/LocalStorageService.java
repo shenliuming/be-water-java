@@ -13,8 +13,6 @@ import java.nio.file.Files;
 /**
  * 本地存储
  *
- * @author 阿沐 babamu@126.com
- * <a href="https://be-water.net">MAKU</a>
  */
 public class LocalStorageService extends StorageService {
 

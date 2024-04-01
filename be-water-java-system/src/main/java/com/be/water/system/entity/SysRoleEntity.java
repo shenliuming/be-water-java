@@ -11,8 +11,6 @@ import com.be.water.system.enums.DataScopeEnum;
 /**
  * 角色
  *
- * @author 阿沐 babamu@126.com
- * <a href="https://be-water.net">MAKU</a>
  */
 @Data
 @EqualsAndHashCode(callSuper = false)

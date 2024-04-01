@@ -13,8 +13,6 @@ import org.springframework.stereotype.Component;
 /**
  * 认证事件处理
  *
- * @author 阿沐 babamu@126.com
- * <a href="https://be-water.net">MAKU</a>
  */
 @Component
 @AllArgsConstructor

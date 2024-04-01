@@ -13,8 +13,6 @@ import java.util.Date;
 /**
  * AccessToken
  *
- * @author 阿沐 babamu@126.com
- * <a href="https://be-water.net">MAKU</a>
  */
 @Data
 @Schema(description = "AccessToken")

@@ -11,8 +11,6 @@ import java.util.Date;
 /**
  * 定时任务日志
  *
- * @author 阿沐 babamu@126.com
- * <a href="https://be-water.net">MAKU</a>
  */
 @Data
 @TableName("schedule_job_log")

@@ -9,8 +9,6 @@ import java.util.Date;
 /**
  * Entity基类
  *
- * @author 阿沐 babamu@126.com
- * <a href="https://be-water.net">MAKU</a>
  */
 @Data
 public abstract class BaseEntity implements TransPojo {

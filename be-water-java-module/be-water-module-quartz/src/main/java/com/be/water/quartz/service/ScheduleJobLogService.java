@@ -9,8 +9,6 @@ import com.be.water.quartz.vo.ScheduleJobLogVO;
 /**
  * 定时任务日志
  *
- * @author 阿沐 babamu@126.com
- * <a href="https://be-water.net">MAKU</a>
  */
 public interface ScheduleJobLogService extends BaseService<ScheduleJobLogEntity> {
 

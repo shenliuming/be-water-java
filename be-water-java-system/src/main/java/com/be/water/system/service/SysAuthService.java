@@ -5,8 +5,6 @@ import com.be.water.system.vo.*;
 /**
  * 权限认证服务
  *
- * @author 阿沐 babamu@126.com
- * <a href="https://be-water.net">MAKU</a>
  */
 public interface SysAuthService {
 

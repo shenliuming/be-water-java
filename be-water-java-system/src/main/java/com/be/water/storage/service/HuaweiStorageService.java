@@ -10,8 +10,6 @@ import java.io.InputStream;
 /**
  * 华为云存储
  *
- * @author 阿沐 babamu@126.com
- * <a href="https://be-water.net">MAKU</a>
  */
 public class HuaweiStorageService extends StorageService {
 

@@ -10,8 +10,6 @@ import java.util.List;
 /**
  * 角色与菜单对应关系
  * 
- * @author 阿沐 babamu@126.com
- * <a href="https://be-water.net">MAKU</a>
  */
 public interface SysRoleMenuService extends BaseService<SysRoleMenuEntity> {
 

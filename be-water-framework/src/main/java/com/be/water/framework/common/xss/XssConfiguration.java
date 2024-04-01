@@ -14,8 +14,6 @@ import org.springframework.util.PathMatcher;
 /**
  * XSS 配置文件
  *
- * @author 阿沐 babamu@126.com
- * <a href="https://be-water.net">MAKU</a>
  */
 @Configuration
 @EnableConfigurationProperties(XssProperties.class)

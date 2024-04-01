@@ -10,8 +10,6 @@ import com.be.water.system.enums.UserStatusEnum;
 /**
  * 用户
  *
- * @author 阿沐 babamu@126.com
- * <a href="https://be-water.net">MAKU</a>
  */
 @Data
 @EqualsAndHashCode(callSuper = false)

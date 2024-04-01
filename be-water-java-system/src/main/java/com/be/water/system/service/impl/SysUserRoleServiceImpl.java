@@ -17,8 +17,6 @@ import java.util.stream.Collectors;
 /**
  * 用户角色关系
  *
- * @author 阿沐 babamu@126.com
- * <a href="https://be-water.net">MAKU</a>
  */
 @Service
 @AllArgsConstructor

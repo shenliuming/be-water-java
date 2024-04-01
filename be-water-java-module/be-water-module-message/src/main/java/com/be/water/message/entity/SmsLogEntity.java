@@ -12,8 +12,6 @@ import java.util.Date;
 /**
  * 短信日志
  *
- * @author 阿沐 babamu@126.com
- * <a href="https://be-water.net">MAKU</a>
  */
 @Data
 @EqualsAndHashCode(callSuper=false)

@@ -8,7 +8,7 @@ import com.be.water.framework.common.query.Query;
 /**
 * 定时任务日志查询
 *
-* @author 阿沐 babamu@126.com
+* 
 */
 @Data
 @EqualsAndHashCode(callSuper = false)

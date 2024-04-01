@@ -6,8 +6,6 @@ import lombok.Getter;
 /**
  * 数据范围枚举
  *
- * @author 阿沐 babamu@126.com
- * <a href="https://be-water.net">MAKU</a>
  */
 @Getter
 @AllArgsConstructor

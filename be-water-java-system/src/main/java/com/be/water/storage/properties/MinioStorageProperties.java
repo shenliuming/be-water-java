@@ -5,8 +5,6 @@ import lombok.Data;
 /**
  * Minio存储配置项
  *
- * @author 阿沐 babamu@126.com
- * <a href="https://be-water.net">MAKU</a>
  */
 @Data
 public class MinioStorageProperties {

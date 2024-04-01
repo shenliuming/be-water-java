@@ -11,8 +11,6 @@ import java.util.Date;
 /**
  * 操作日志
  *
- * @author 阿沐 babamu@126.com
- * <a href="https://be-water.net">MAKU</a>
  */
 @Data
 @Schema(description = "操作日志")

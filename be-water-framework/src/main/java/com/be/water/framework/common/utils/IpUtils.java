@@ -14,8 +14,6 @@ import java.net.UnknownHostException;
 /**
  * IP地址 工具类
  *
- * @author 阿沐 babamu@126.com
- * <a href="https://be-water.net">MAKU</a>
  */
 @Slf4j
 public class IpUtils {

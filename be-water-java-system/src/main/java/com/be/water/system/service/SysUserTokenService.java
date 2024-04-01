@@ -8,7 +8,7 @@ import com.be.water.system.vo.SysUserTokenVO;
 /**
  * 用户Token
  *
- * @author 阿沐 babamu@126.com
+ * 
  */
 public interface SysUserTokenService extends BaseService<SysUserTokenEntity> {
 

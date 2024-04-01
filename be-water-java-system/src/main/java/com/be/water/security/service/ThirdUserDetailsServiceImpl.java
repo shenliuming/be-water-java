@@ -14,8 +14,6 @@ import org.springframework.stereotype.Service;
 /**
  * 第三方登录，ThirdUserDetailsService
  *
- * @author 阿沐 babamu@126.com
- * <a href="https://be-water.net">MAKU</a>
  */
 @Service
 @AllArgsConstructor

@@ -14,8 +14,6 @@ import java.io.IOException;
 /**
  * xss json过滤
  *
- * @author 阿沐 babamu@126.com
- * <a href="https://be-water.net">MAKU</a>
  */
 @AllArgsConstructor
 public class XssFilterJsonDeserializer extends JsonDeserializer<String> {

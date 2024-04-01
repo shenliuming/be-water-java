@@ -12,8 +12,6 @@ import java.util.List;
 /**
  * JSON 工具类
  *
- * @author 阿沐 babamu@126.com
- * <a href="https://be-water.net">MAKU</a>
  */
 public class JsonUtils {
     private static final ObjectMapper objectMapper = new ObjectMapper();

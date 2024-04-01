@@ -7,8 +7,6 @@ import org.springframework.context.annotation.Configuration;
 /**
  * 安全配置项
  *
- * @author 阿沐 babamu@126.com
- * <a href="https://be-water.net">MAKU</a>
  */
 @Data
 @Configuration

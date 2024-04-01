@@ -11,8 +11,6 @@ import org.springframework.web.bind.annotation.RestController;
 /**
  * 新模块测试
  *
- * @author 阿沐 babamu@126.com
- * <a href="https://be-water.net">MAKU</a>
  */
 @RestController
 @RequestMapping("new/test")

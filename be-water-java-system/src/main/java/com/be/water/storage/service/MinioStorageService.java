@@ -16,8 +16,6 @@ import java.util.Optional;
 /**
  * Minio存储
  *
- * @author 阿沐 babamu@126.com
- * <a href="https://be-water.net">MAKU</a>
  */
 public class MinioStorageService extends StorageService {
     private final MinioClient minioClient;

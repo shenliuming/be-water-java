@@ -8,8 +8,6 @@ import java.io.Serializable;
 /**
  * 手机号登录
  *
- * @author 阿沐 babamu@126.com
- * <a href="https://be-water.net">MAKU</a>
  */
 @Data
 @Schema(description = "手机号登录")

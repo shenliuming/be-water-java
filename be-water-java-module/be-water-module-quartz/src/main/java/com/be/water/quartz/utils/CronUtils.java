@@ -8,8 +8,7 @@ import java.util.Date;
 /**
  * cron 工具类
  *
- * @author 阿沐 babamu@126.com
- * <a href="https://be-water.net">MAKU</a>
+Satan
  *
  */
 public class CronUtils {

@@ -6,8 +6,6 @@ import lombok.Data;
 /**
  * 在线用户
  *
- * @author 阿沐 babamu@126.com
- * <a href="https://be-water.net">MAKU</a>
  */
 @Data
 @Schema(description = "在线用户")

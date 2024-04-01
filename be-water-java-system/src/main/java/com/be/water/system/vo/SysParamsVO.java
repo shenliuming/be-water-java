@@ -11,8 +11,6 @@ import java.util.Date;
 /**
  * 参数管理
  *
- * @author 阿沐 babamu@126.com
- * <a href="https://be-water.net">MAKU</a>
  */
 @Data
 @Schema(description = "参数管理")

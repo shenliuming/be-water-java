@@ -8,8 +8,6 @@ import java.io.StringWriter;
 /**
  * Exception工具类
  *
- * @author 阿沐 babamu@126.com
- * <a href="https://be-water.net">MAKU</a>
  */
 public class ExceptionUtils {
 

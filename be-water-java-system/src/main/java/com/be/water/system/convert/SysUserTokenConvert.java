@@ -8,7 +8,7 @@ import org.mapstruct.factory.Mappers;
 /**
  * 用户Token
  *
- * @author 阿沐 babamu@126.com
+ * 
  */
 @Mapper
 public interface SysUserTokenConvert {

@@ -16,8 +16,6 @@ import java.security.PublicKey;
 /**
  * 国密SM2加密算法
  *
- * @author 阿沐 babamu@126.com
- * <a href="https://be-water.net">MAKU</a>
  */
 public class Sm2Util {
     /**

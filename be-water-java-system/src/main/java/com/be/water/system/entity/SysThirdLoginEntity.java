@@ -8,8 +8,6 @@ import java.util.Date;
 /**
  * 第三方登录
  *
- * @author 阿沐 babamu@126.com
- * <a href="https://be-water.net">MAKU</a>
  */
 
 @Data

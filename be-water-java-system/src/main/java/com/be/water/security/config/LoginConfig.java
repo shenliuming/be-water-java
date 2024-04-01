@@ -10,8 +10,6 @@ import java.util.Map;
 /**
  * 登录配置信息
  *
- * @author 阿沐 babamu@126.com
- * <a href="https://be-water.net">MAKU</a>
  */
 @Configuration
 public class LoginConfig {

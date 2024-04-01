@@ -16,8 +16,6 @@ import java.util.Properties;
 /**
  * 允许访问的资源
  *
- * @author 阿沐 babamu@126.com
- * <a href="https://be-water.net">MAKU</a>
  */
 @Component
 public class PermitResource {

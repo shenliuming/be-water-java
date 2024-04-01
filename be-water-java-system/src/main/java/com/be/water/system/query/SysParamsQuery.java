@@ -8,8 +8,6 @@ import com.be.water.framework.common.query.Query;
 /**
  * 参数管理查询
  *
- * @author 阿沐 babamu@126.com
- * <a href="https://be-water.net">MAKU</a>
  */
 @Data
 @EqualsAndHashCode(callSuper = false)

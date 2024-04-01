@@ -7,8 +7,6 @@ import com.be.water.framework.common.exception.ServerException;
 /**
  * 校验工具类
  *
- * @author 阿沐 babamu@126.com
- * <a href="https://be-water.net">MAKU</a>
  */
 public class AssertUtils {
 

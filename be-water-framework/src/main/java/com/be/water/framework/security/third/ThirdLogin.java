@@ -7,8 +7,6 @@ import java.io.Serializable;
 /**
  * 第三方登录 表单数据
  *
- * @author 阿沐 babamu@126.com
- * <a href="https://be-water.net">MAKU</a>
  */
 @Data
 public class ThirdLogin implements Serializable {

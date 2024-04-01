@@ -3,8 +3,6 @@ package com.be.water.storage.enums;
 /**
  * 存储类型枚举
  *
- * @author 阿沐 babamu@126.com
- * <a href="https://be-water.net">MAKU</a>
  */
 public enum StorageTypeEnum {
     /**

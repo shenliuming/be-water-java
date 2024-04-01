@@ -12,8 +12,6 @@ import java.util.Map;
 /**
  * 短信服务Api
  *
- * @author 阿沐 babamu@126.com
- * <a href="https://be-water.net">MAKU</a>
  */
 @Component
 @AllArgsConstructor

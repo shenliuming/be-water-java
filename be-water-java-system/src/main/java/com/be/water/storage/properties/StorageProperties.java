@@ -8,8 +8,6 @@ import org.springframework.context.annotation.Bean;
 /**
  * 存储配置项
  *
- * @author 阿沐 babamu@126.com
- * <a href="https://be-water.net">MAKU</a>
  */
 @Data
 @ConfigurationProperties(prefix = "storage")

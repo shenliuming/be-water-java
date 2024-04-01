@@ -21,8 +21,6 @@ import java.io.IOException;
 /**
  * 认证过滤器
  *
- * @author 阿沐 babamu@126.com
- * <a href="https://be-water.net">MAKU</a>
  */
 @Component
 @AllArgsConstructor

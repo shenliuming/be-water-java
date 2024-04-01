@@ -8,8 +8,6 @@ import java.util.Objects;
 /**
  * 超级管理员枚举
  *
- * @author 阿沐 babamu@126.com
- * <a href="https://be-water.net">MAKU</a>
  */
 @Getter
 @AllArgsConstructor

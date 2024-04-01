@@ -10,7 +10,7 @@ import java.util.List;
 /**
 * 定时任务日志
 *
-* @author 阿沐 babamu@126.com
+* 
 */
 @Mapper
 public interface ScheduleJobLogConvert {

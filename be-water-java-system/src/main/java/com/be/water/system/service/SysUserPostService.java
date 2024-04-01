@@ -8,8 +8,6 @@ import java.util.List;
 /**
  * 用户岗位关系
  *
- * @author 阿沐 babamu@126.com
- * <a href="https://be-water.net">MAKU</a>
  */
 public interface SysUserPostService extends BaseService<SysUserPostEntity> {
 

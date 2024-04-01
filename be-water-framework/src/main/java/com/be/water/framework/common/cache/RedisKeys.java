@@ -3,8 +3,6 @@ package com.be.water.framework.common.cache;
 /**
  * Redis Key管理
  *
- * @author 阿沐 babamu@126.com
- * <a href="https://be-water.net">MAKU</a>
  */
 public class RedisKeys {
 

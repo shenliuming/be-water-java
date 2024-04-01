@@ -10,8 +10,6 @@ import com.be.water.framework.mybatis.entity.BaseEntity;
 /**
  * 机构管理
  *
- * @author 阿沐 babamu@126.com
- * <a href="https://be-water.net">MAKU</a>
  */
 @Data
 @EqualsAndHashCode(callSuper = false)

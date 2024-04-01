@@ -9,8 +9,6 @@ import org.springframework.data.redis.serializer.RedisSerializer;
 /**
  * Redis配置
  *
- * @author 阿沐 babamu@126.com
- * <a href="https://be-water.net">MAKU</a>
  */
 @Configuration
 public class RedisConfig {
