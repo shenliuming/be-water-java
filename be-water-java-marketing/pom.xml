@@ -7,10 +7,10 @@
         <groupId>com.be.water</groupId>
         <version>${revision}</version>
     </parent>
+
     <modelVersion>4.0.0</modelVersion>
-
     <artifactId>be-water-java-marketing</artifactId>
-
+    <packaging>jar</packaging>
     <description>
         项目ID：ddm
         项目名称：Data Driven Marketing
@@ -24,8 +24,13 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
-    <dependencies>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.be.water</groupId>
+            <artifactId>be-water-framework</artifactId>
+            <version>${revision}</version>
+        </dependency>
     </dependencies>
 
 </project>

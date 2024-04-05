@@ -1,4 +1,4 @@
-package com.be.water.module.controller;
+package com.be.water.shortchain.controller;
 
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
@@ -13,10 +13,10 @@ import org.springframework.web.bind.annotation.RestController;
  *
  */
 @RestController
-@RequestMapping("new/test")
-@Tag(name="新模块测试")
+@RequestMapping("short")
+@Tag(name="短链项目")
 @AllArgsConstructor
-public class TestController {
+public class ShortChainController {
 
     @GetMapping()
     @Operation(summary = "测试接口")

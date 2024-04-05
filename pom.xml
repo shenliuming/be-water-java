@@ -8,7 +8,7 @@
 	<modules>
 		<module>be-water-java-common</module>
 		<module>be-water-java-marketing</module>
-		<module>be-water-java-new</module>
+		<module>be-water-java-short-chain</module>
 		<module>be-water-java-system</module>
 		<module>be-water-java-module</module>
 		<module>be-water-java-api</module>

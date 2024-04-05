@@ -27,7 +27,7 @@
         </dependency>
         <dependency>
             <groupId>com.be.water</groupId>
-            <artifactId>be-water-java-new</artifactId>
+            <artifactId>be-water-java-short-chain</artifactId>
             <version>${revision}</version>
         </dependency>
         <dependency>

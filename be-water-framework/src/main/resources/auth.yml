@@ -9,3 +9,6 @@ auth:
     - /swagger-ui/**
     - /doc.html
     - /
+    - /be-water-short-chain/**
+    - /be-water-generator/**
+    - /short/**
