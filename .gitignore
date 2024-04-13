@@ -26,3 +26,6 @@ replay_pid*
 .idea/*
 
 logs/*
+
+*/assets/*
+*/classes/*
