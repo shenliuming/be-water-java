@@ -29,3 +29,10 @@ logs/*
 
 */assets/*
 */classes/*
+*.css
+*.js
+*.flt
+*.lst
+index.html
+*.xdb
+target/
