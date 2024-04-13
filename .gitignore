@@ -24,3 +24,6 @@ hs_err_pid*
 replay_pid*
 .idea
 .idea/*
+
+logs/*
+be-water-java-module/be-water-module-generator/*
