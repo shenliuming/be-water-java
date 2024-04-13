@@ -33,3 +33,16 @@ spring:
           #    url: jdbc:postgresql://192.168.3.19:5432/postgres
           #    username: postgres
           #    password: 123456
+wx:
+  mp:
+    useRedis: false
+    redisConfig:
+      host: 8.134.48.80
+      port: 6379
+      password: satan@redis
+      timeout: 2000
+    configs:
+      - appId: wxac4aff5e8fd034f6 # 测试号
+        secret: da1e528b223f6cfbfb523f4cd1a448f4
+        token:
+        aesKey:

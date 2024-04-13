@@ -20,6 +20,9 @@ public class Result<T> {
     @Schema(description = "响应数据")
     private T data;
 
+    @Schema(description = "全局追踪ID")
+    String traceId;
+
     public static <T> Result<T> ok() {
         return ok(null);
     }

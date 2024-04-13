@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Configuration;
 /**
  * Swagger配置
  *
- * @author 阿沐  babamu@126.com
+ * @author shenliuming  ceekayshen@foxmail.com
  */
 @Configuration
 public class SwaggerConfig {
@@ -28,7 +28,7 @@ public class SwaggerConfig {
     @Bean
     public OpenAPI customOpenAPI() {
         Contact contact = new Contact();
-        contact.setName("阿沐 babamu@126.com");
+        contact.setName("shenliuming ceekayshen@foxmail.com");
 
         return new OpenAPI().info(new Info()
                 .title("be-water")

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.be.water.market.dao.WxAccountConfigDao">
+
+    <resultMap type="com.be.water.market.entity.WxAccountConfigEntity" id="wxAccountConfigMap">
+        <result property="id" column="id"/>
+        <result property="appId" column="app_id"/>
+        <result property="appName" column="app_name"/>
+        <result property="type" column="type"/>
+        <result property="secret" column="secret"/>
+        <result property="token" column="token"/>
+        <result property="aesKey" column="aes_key"/>
+        <result property="isFlowDist" column="is_flow_dist"/>
+        <result property="status" column="status"/>
+        <result property="welcomeMessage" column="welcome_message"/>
+        <result property="remark" column="remark"/>
+    </resultMap>
+
+</mapper>
