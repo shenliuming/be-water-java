@@ -27,3 +27,4 @@ replay_pid*
 
 logs/*
 be-water-java-module/be-water-module-generator/*
+be-water-java-module/*
