@@ -27,12 +27,10 @@ replay_pid*
 
 logs/*
 
-*/assets/*
-*/classes/*
-*.css
-*.js
-*.flt
-*.lst
-index.html
-*.xdb
+#*.css
+#*.js
+#*.flt
+#*.lst
+#index.html
+#*.xdb
 target/
