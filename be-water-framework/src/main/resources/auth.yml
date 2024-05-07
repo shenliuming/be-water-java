@@ -12,3 +12,4 @@ auth:
     - /be-water-short-chain/**
     - /be-water-generator/**
     - /short/**
+    - /wx/**

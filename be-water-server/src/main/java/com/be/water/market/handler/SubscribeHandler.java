@@ -78,10 +78,12 @@ public class SubscribeHandler extends AbstractHandler {
                 return imageMessage;
             }
 
-            //保存用户信息
+
             if(null != userWxInfo){
 //            wxService.saveWxMpUser(user, null);
 //            wxmUserService.saveWxmUser(appId,user);
+                // 保存微信关注的用户信息
+                // 这里需要更新用户信息
                 WxUserVO wxUserVO = new WxUserVO();
                 wxUserVO.setAppId(appId);
                 wxUserVO.setUnionId(userWxInfo.getUnionId());
