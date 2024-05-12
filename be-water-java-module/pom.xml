@@ -9,7 +9,6 @@
 	<packaging>pom</packaging>
 
 	<modules>
-		<module>be-water-module-generator</module>
 		<module>be-water-module-quartz</module>
 		<module>be-water-module-message</module>
 		<module>be-water-module-monitor</module>
