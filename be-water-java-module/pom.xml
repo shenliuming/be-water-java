@@ -17,7 +17,6 @@
 		<java.version>17</java.version>
 	</properties>
 	<modules>
-		<module>be-water-module-generator</module>
 		<module>be-water-module-quartz</module>
 		<module>be-water-module-message</module>
 		<module>be-water-module-monitor</module>

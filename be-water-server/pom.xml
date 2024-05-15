@@ -18,11 +18,6 @@
     <dependencies>
         <dependency>
             <groupId>com.be.water</groupId>
-            <artifactId>be-water-module-generator</artifactId>
-            <version>${revision}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.be.water</groupId>
             <artifactId>be-water-java-system</artifactId>
             <version>${revision}</version>
         </dependency>
@@ -34,11 +29,6 @@
         <dependency>
             <groupId>com.be.water</groupId>
             <artifactId>be-water-module-quartz</artifactId>
-            <version>${revision}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.be.water</groupId>
-            <artifactId>be-water-module-generator</artifactId>
             <version>${revision}</version>
         </dependency>
         <dependency>
