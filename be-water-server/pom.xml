@@ -10,16 +10,12 @@
     <packaging>jar</packaging>
 
     <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <java.version>17</java.version>
     </properties>
     <dependencies>
-        <dependency>
-            <groupId>com.be.water</groupId>
-            <artifactId>be-water-module-generator</artifactId>
-            <version>${revision}</version>
-        </dependency>
         <dependency>
             <groupId>com.be.water</groupId>
             <artifactId>be-water-java-system</artifactId>
@@ -33,11 +29,6 @@
         <dependency>
             <groupId>com.be.water</groupId>
             <artifactId>be-water-module-quartz</artifactId>
-            <version>${revision}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.be.water</groupId>
-            <artifactId>be-water-module-generator</artifactId>
             <version>${revision}</version>
         </dependency>
         <dependency>

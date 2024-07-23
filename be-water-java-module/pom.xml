@@ -8,8 +8,15 @@
 	<artifactId>be-water-java-module</artifactId>
 	<packaging>pom</packaging>
 
+	<name>be-water-java-module</name>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.source>17</maven.compiler.source>
+		<maven.compiler.target>17</maven.compiler.target>
+		<java.version>17</java.version>
+	</properties>
 	<modules>
-		<module>be-water-module-generator</module>
 		<module>be-water-module-quartz</module>
 		<module>be-water-module-message</module>
 		<module>be-water-module-monitor</module>
