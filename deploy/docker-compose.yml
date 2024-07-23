@@ -1,0 +1,12 @@
+version: '2.7'
+services:
+  be-water-server:
+    image: bewater:1.0
+    container_name: be-water-server
+    ports:
+      - 80:80
+    environment:
+      - spring.profiles.active=dev
+      - server.port=80
+    volumes:
+      - /opt/docker/ddm/api/app/be-water-server.jar:/app/app.jar
