@@ -1,7 +1,11 @@
 package com.be.water.market.handler;
 
+import cn.hutool.core.collection.CollectionUtil;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
+import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
+import com.baomidou.mybatisplus.core.toolkit.Wrappers;
+import com.be.water.market.entity.WxUserEntity;
 import com.be.water.market.service.WxAccountConfigService;
 import com.be.water.market.service.WxUserService;
 import com.be.water.market.vo.WxAccountConfigVO;
@@ -19,6 +23,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.util.Date;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -57,9 +62,11 @@ public class SubscribeHandler extends AbstractHandler {
                 // TODO 可以添加关注用户到本地数据库
             }
             WxAccountConfigVO vo = wxAccountConfigService.getByAppId(appId);
-            JSONObject object = JSON.parseObject(vo.getWelcomeMessage());
-            welcomeBackMessage = object.get("default").toString();
-            this.logger.info("回复微信消息(关注)：backMediaId={},backMessage={},welcomeBackMessage={}", backMediaId,backMessage,welcomeBackMessage);
+            if(null != vo){
+                JSONObject object = JSON.parseObject(vo.getWelcomeMessage());
+                welcomeBackMessage = object.get("default").toString();
+                this.logger.info("回复微信消息(关注)：backMediaId={},backMessage={},welcomeBackMessage={}", backMediaId,backMessage,welcomeBackMessage);
+            }
 
             //回复欢迎消息
             if(StringUtils.isNotEmpty(welcomeBackMessage)){
@@ -84,20 +91,28 @@ public class SubscribeHandler extends AbstractHandler {
 //            wxmUserService.saveWxmUser(appId,user);
                 // 保存微信关注的用户信息
                 // 这里需要更新用户信息
-                WxUserVO wxUserVO = new WxUserVO();
-                wxUserVO.setAppId(appId);
-                wxUserVO.setUnionId(userWxInfo.getUnionId());
-                wxUserVO.setOpenId(userWxInfo.getOpenId());
-                wxUserVO.setNickname(userWxInfo.getNickname());
-                wxUserVO.setAvatar(userWxInfo.getHeadImgUrl());
-                wxUserVO.setQrSceneStr(userWxInfo.getQrSceneStr());
-                wxUserVO.setSubscribeScene(userWxInfo.getSubscribeScene());
-                wxUserVO.setSubscribe(1);
-                wxUserVO.setSubscribeTime(new Date(userWxInfo.getSubscribeTime()*1000));
-                if(null != userWxInfo.getTagIds() && userWxInfo.getTagIds().length > 0) {
-                    wxUserVO.setTagidList(userWxInfo.getTagIds().toString());
+                this.logger.info("保存微信关注用户信息：{}", userWxInfo);
+                LambdaQueryWrapper<WxUserEntity> wrappers = Wrappers.lambdaQuery();
+                wrappers.eq(WxUserEntity::getAppId, appId);
+                wrappers.eq(WxUserEntity::getOpenId,userWxInfo.getOpenId());
+
+                List<WxUserEntity> wxUserEntities = wxUserService.list(wrappers);
+                if(CollectionUtil.isEmpty(wxUserEntities)){
+                    WxUserVO wxUserVO = new WxUserVO();
+                    wxUserVO.setAppId(appId);
+                    wxUserVO.setUnionId(userWxInfo.getUnionId());
+                    wxUserVO.setOpenId(userWxInfo.getOpenId());
+                    wxUserVO.setNickname(userWxInfo.getNickname());
+                    wxUserVO.setAvatar(userWxInfo.getHeadImgUrl());
+                    wxUserVO.setQrSceneStr(userWxInfo.getQrSceneStr());
+                    wxUserVO.setSubscribeScene(userWxInfo.getSubscribeScene());
+                    wxUserVO.setSubscribe(1);
+                    wxUserVO.setSubscribeTime(new Date(userWxInfo.getSubscribeTime()*1000));
+                    if(null != userWxInfo.getTagIds() && userWxInfo.getTagIds().length > 0) {
+                        wxUserVO.setTagidList(userWxInfo.getTagIds().toString());
+                    }
+                    wxUserService.save(wxUserVO);
                 }
-                wxUserService.save(wxUserVO);
             }
 
 
@@ -107,8 +122,6 @@ public class SubscribeHandler extends AbstractHandler {
                 this.logger.info("该公众号没有获取用户信息权限！");
             }
         }
-
-
 
         return null;
     }
