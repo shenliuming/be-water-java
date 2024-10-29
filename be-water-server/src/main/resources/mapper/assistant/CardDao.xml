@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.be.water.assistant.dao.CardDao">
+
+    <resultMap type="com.be.water.assistant.entity.CardEntity" id="cardMap">
+        <result property="id" column="id"/>
+        <result property="name" column="name"/>
+        <result property="icon" column="icon"/>
+        <result property="hitRange" column="hit_range"/>
+        <result property="heroType" column="hero_type"/>
+        <result property="quality" column="quality"/>
+        <result property="cost" column="cost"/>
+        <result property="country" column="country"/>
+        <result property="isSeasonCard" column="is_season_card"/>
+        <result property="heroLevel" column="hero_level"/>
+        <result property="policyAwakeState" column="policy_awake_state"/>
+        <result property="awakeState" column="awake_state"/>
+        <result property="season" column="season"/>
+        <result property="advanceNum" column="advance_num"/>
+        <result property="heroTypeAdvance" column="hero_type_advance"/>
+        <result property="cfgHeroTypeAvailible" column="cfg_hero_type_availible"/>
+        <result property="heroTypeAvailible" column="hero_type_availible"/>
+        <result property="iconHeroId" column="icon_hero_id"/>
+        <result property="heroId" column="hero_id"/>
+    </resultMap>
+
+</mapper>
