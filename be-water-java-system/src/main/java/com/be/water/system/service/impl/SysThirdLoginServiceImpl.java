@@ -4,7 +4,7 @@ import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import lombok.AllArgsConstructor;
 import me.zhyd.oauth.model.AuthUser;
 import com.be.water.framework.common.exception.ServerException;
-import com.be.water.framework.mybatis.service.impl.BaseServiceImpl;
+import com.be.water.framework.common.service.impl.BaseServiceImpl;
 import com.be.water.system.convert.SysThirdLoginConvert;
 import com.be.water.system.dao.SysThirdLoginDao;
 import com.be.water.system.entity.SysThirdLoginEntity;

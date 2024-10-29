@@ -1,4 +1,4 @@
-package com.be.water.framework.mybatis.service;
+package com.be.water.framework.common.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
 

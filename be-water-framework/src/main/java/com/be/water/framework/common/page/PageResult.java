@@ -1,4 +1,4 @@
-package com.be.water.framework.common.utils;
+package com.be.water.framework.common.page;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;

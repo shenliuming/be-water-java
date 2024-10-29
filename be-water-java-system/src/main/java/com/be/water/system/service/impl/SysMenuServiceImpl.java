@@ -5,7 +5,7 @@ import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import lombok.AllArgsConstructor;
 import com.be.water.framework.common.exception.ServerException;
 import com.be.water.framework.common.utils.TreeUtils;
-import com.be.water.framework.mybatis.service.impl.BaseServiceImpl;
+import com.be.water.framework.common.service.impl.BaseServiceImpl;
 import com.be.water.framework.security.user.UserDetail;
 import com.be.water.system.convert.SysMenuConvert;
 import com.be.water.system.dao.SysMenuDao;

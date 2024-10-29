@@ -1,4 +1,4 @@
-package com.be.water.framework.mybatis.dao;
+package com.be.water.framework.common.dao;
 
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;

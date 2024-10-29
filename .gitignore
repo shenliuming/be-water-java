@@ -34,3 +34,5 @@ logs/*
 #index.html
 #*.xdb
 target/
+
+*.iml

@@ -1,7 +1,7 @@
 package com.be.water.quartz.service;
 
-import com.be.water.framework.common.utils.PageResult;
-import com.be.water.framework.mybatis.service.BaseService;
+import com.be.water.framework.common.page.PageResult;
+import com.be.water.framework.common.service.BaseService;
 import com.be.water.quartz.entity.ScheduleJobEntity;
 import com.be.water.quartz.query.ScheduleJobQuery;
 import com.be.water.quartz.vo.ScheduleJobVO;

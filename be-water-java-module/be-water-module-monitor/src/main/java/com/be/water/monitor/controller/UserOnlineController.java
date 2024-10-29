@@ -9,7 +9,7 @@ import lombok.AllArgsConstructor;
 import com.be.water.framework.common.cache.RedisCache;
 import com.be.water.framework.common.cache.RedisKeys;
 import com.be.water.framework.common.query.Query;
-import com.be.water.framework.common.utils.PageResult;
+import com.be.water.framework.common.page.PageResult;
 import com.be.water.framework.common.utils.Result;
 import com.be.water.framework.security.cache.TokenStoreCache;
 import com.be.water.framework.security.user.UserDetail;

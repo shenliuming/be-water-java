@@ -1,6 +1,6 @@
 package com.be.water.shortchain.dao;
 
-import com.be.water.framework.mybatis.dao.BaseDao;
+import com.be.water.framework.common.dao.BaseDao;
 import com.be.water.shortchain.entity.ShortLinkEntity;
 import org.apache.ibatis.annotations.Mapper;
 

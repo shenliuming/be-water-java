@@ -7,7 +7,7 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
 import com.be.water.framework.common.exception.ServerException;
-import com.be.water.framework.common.utils.PageResult;
+import com.be.water.framework.common.page.PageResult;
 import com.be.water.framework.common.utils.Result;
 import com.be.water.framework.operatelog.annotations.OperateLog;
 import com.be.water.framework.operatelog.enums.OperateTypeEnum;

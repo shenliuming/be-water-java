@@ -5,7 +5,7 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
 import com.be.water.framework.common.query.Query;
-import com.be.water.framework.common.utils.PageResult;
+import com.be.water.framework.common.page.PageResult;
 import com.be.water.framework.common.utils.Result;
 import com.be.water.system.convert.SysThirdLoginConfigConvert;
 import com.be.water.system.entity.SysThirdLoginConfigEntity;

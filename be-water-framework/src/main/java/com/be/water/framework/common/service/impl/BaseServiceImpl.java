@@ -1,4 +1,4 @@
-package com.be.water.framework.mybatis.service.impl;
+package com.be.water.framework.common.service.impl;
 
 import cn.hutool.core.util.StrUtil;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
@@ -11,7 +11,7 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.be.water.framework.common.constant.Constant;
 import com.be.water.framework.mybatis.interceptor.DataScope;
 import com.be.water.framework.common.query.Query;
-import com.be.water.framework.mybatis.service.BaseService;
+import com.be.water.framework.common.service.BaseService;
 import com.be.water.framework.security.user.SecurityUser;
 import com.be.water.framework.security.user.UserDetail;
 

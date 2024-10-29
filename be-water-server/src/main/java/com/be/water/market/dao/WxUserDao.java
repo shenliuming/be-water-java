@@ -1,7 +1,7 @@
 package com.be.water.market.dao;
 
 
-import com.be.water.framework.mybatis.dao.BaseDao;
+import com.be.water.framework.common.dao.BaseDao;
 import com.be.water.market.entity.WxUserEntity;
 import org.apache.ibatis.annotations.Mapper;
 

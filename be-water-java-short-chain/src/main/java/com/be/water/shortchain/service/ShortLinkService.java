@@ -1,7 +1,7 @@
 package com.be.water.shortchain.service;
 
-import com.be.water.framework.common.utils.PageResult;
-import com.be.water.framework.mybatis.service.BaseService;
+import com.be.water.framework.common.page.PageResult;
+import com.be.water.framework.common.service.BaseService;
 import com.be.water.shortchain.vo.ShortLinkVO;
 import com.be.water.shortchain.query.ShortLinkQuery;
 import com.be.water.shortchain.entity.ShortLinkEntity;
