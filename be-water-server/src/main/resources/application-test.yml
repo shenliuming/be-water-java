@@ -37,9 +37,9 @@ wx:
   mp:
     useRedis: false
     redisConfig:
-      host: 8.134.48.80
+      host: 127.0.0.1
       port: 6379
-      password: satan@redis
+      password: 123456
       timeout: 2000
     configs:
       - appId: wxac4aff5e8fd034f6 # 测试号
