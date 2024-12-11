@@ -1,7 +1,9 @@
 package com.be.water.assistant.entity;
 
+import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
+import com.baomidou.mybatisplus.extension.handlers.JacksonTypeHandler;
 import lombok.Data;
 
 /**
@@ -93,12 +95,14 @@ public class CardEntity {
 	/**
 	* 可用的英雄类型
 	*/
-	private Object cfgHeroTypeAvailible;
+	@TableField(typeHandler = JacksonTypeHandler.class)
+	private String cfgHeroTypeAvailible;
 
 	/**
 	* 可用的英雄类型
 	*/
-	private Object heroTypeAvailible;
+	@TableField(typeHandler = JacksonTypeHandler.class)
+	private String heroTypeAvailible;
 
 	/**
 	* 图标英雄ID

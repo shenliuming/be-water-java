@@ -1,10 +1,9 @@
 package com.be.water.assistant.vo;
 
 import io.swagger.v3.oas.annotations.media.Schema;
-import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
+
 import java.io.Serializable;
-import com.be.water.framework.common.utils.DateUtils;
 
 /**
 * 卡牌信息表
@@ -63,10 +62,10 @@ public class CardVO implements Serializable {
 	private Integer heroTypeAdvance;
 
 	@Schema(description = "可用的英雄类型")
-	private Object cfgHeroTypeAvailible;
+	private String cfgHeroTypeAvailible;
 
 	@Schema(description = "可用的英雄类型")
-	private Object heroTypeAvailible;
+	private String heroTypeAvailible;
 
 	@Schema(description = "图标英雄ID")
 	private Long iconHeroId;

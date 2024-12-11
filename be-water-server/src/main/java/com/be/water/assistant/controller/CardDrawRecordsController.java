@@ -1,16 +1,15 @@
 package com.be.water.assistant.controller;
 
+import com.be.water.assistant.convert.CardDrawRecordsConvert;
+import com.be.water.assistant.entity.CardDrawRecordsEntity;
+import com.be.water.assistant.query.CardDrawRecordsQuery;
+import com.be.water.assistant.service.CardDrawRecordsService;
+import com.be.water.assistant.vo.CardDrawRecordsVO;
+import com.be.water.framework.common.page.PageResult;
+import com.be.water.framework.common.utils.Result;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.AllArgsConstructor;
-import com.be.water.framework.common.page.PageResult;
-import com.be.water.framework.common.utils.Result;
-import com.be.water.assistant.convert.CardDrawRecordsConvert;
-import com.be.water.assistant.entity.CardDrawRecordsEntity;
-import com.be.water.assistant.service.CardDrawRecordsService;
-import com.be.water.assistant.query.CardDrawRecordsQuery;
-import com.be.water.assistant.vo.CardDrawRecordsVO;
-import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
@@ -31,7 +30,7 @@ public class CardDrawRecordsController {
 
     @GetMapping("page")
     @Operation(summary = "分页")
-    @PreAuthorize("hasAuthority('assistant:records:page')")
+//    @PreAuthorize("hasAuthority('assistant:records:page')")
     public Result<PageResult<CardDrawRecordsVO>> page(@Valid CardDrawRecordsQuery query){
         PageResult<CardDrawRecordsVO> page = cardDrawRecordsService.page(query);
 
@@ -40,7 +39,7 @@ public class CardDrawRecordsController {
 
     @GetMapping("{id}")
     @Operation(summary = "信息")
-    @PreAuthorize("hasAuthority('assistant:records:info')")
+//    @PreAuthorize("hasAuthority('assistant:records:info')")
     public Result<CardDrawRecordsVO> get(@PathVariable("id") Long id){
         CardDrawRecordsEntity entity = cardDrawRecordsService.getById(id);
 
@@ -49,7 +48,7 @@ public class CardDrawRecordsController {
 
     @PostMapping
     @Operation(summary = "保存")
-    @PreAuthorize("hasAuthority('assistant:records:save')")
+//    @PreAuthorize("hasAuthority('assistant:records:save')")
     public Result<String> save(@RequestBody CardDrawRecordsVO vo){
         cardDrawRecordsService.save(vo);
 
@@ -58,7 +57,7 @@ public class CardDrawRecordsController {
 
     @PutMapping
     @Operation(summary = "修改")
-    @PreAuthorize("hasAuthority('assistant:records:update')")
+//    @PreAuthorize("hasAuthority('assistant:records:update')")
     public Result<String> update(@RequestBody @Valid CardDrawRecordsVO vo){
         cardDrawRecordsService.update(vo);
 
@@ -67,7 +66,7 @@ public class CardDrawRecordsController {
 
     @DeleteMapping
     @Operation(summary = "删除")
-    @PreAuthorize("hasAuthority('assistant:records:delete')")
+//    @PreAuthorize("hasAuthority('assistant:records:delete')")
     public Result<String> delete(@RequestBody List<Long> idList){
         cardDrawRecordsService.delete(idList);
 

@@ -1,16 +1,15 @@
 package com.be.water.assistant.controller;
 
+import com.be.water.assistant.convert.UserConvert;
+import com.be.water.assistant.entity.UserEntity;
+import com.be.water.assistant.query.UserQuery;
+import com.be.water.assistant.service.UserService;
+import com.be.water.assistant.vo.UserVO;
+import com.be.water.framework.common.page.PageResult;
+import com.be.water.framework.common.utils.Result;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.AllArgsConstructor;
-import com.be.water.framework.common.page.PageResult;
-import com.be.water.framework.common.utils.Result;
-import com.be.water.assistant.convert.UserConvert;
-import com.be.water.assistant.entity.UserEntity;
-import com.be.water.assistant.service.UserService;
-import com.be.water.assistant.query.UserQuery;
-import com.be.water.assistant.vo.UserVO;
-import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
@@ -31,7 +30,7 @@ public class UserController {
 
     @GetMapping("page")
     @Operation(summary = "分页")
-    @PreAuthorize("hasAuthority('assistant:user:page')")
+//    @PreAuthorize("hasAuthority('assistant:user:page')")
     public Result<PageResult<UserVO>> page(@Valid UserQuery query){
         PageResult<UserVO> page = userService.page(query);
 
@@ -40,7 +39,7 @@ public class UserController {
 
     @GetMapping("{id}")
     @Operation(summary = "信息")
-    @PreAuthorize("hasAuthority('assistant:user:info')")
+//    @PreAuthorize("hasAuthority('assistant:user:info')")
     public Result<UserVO> get(@PathVariable("id") Long id){
         UserEntity entity = userService.getById(id);
 
@@ -49,7 +48,7 @@ public class UserController {
 
     @PostMapping
     @Operation(summary = "保存")
-    @PreAuthorize("hasAuthority('assistant:user:save')")
+//    @PreAuthorize("hasAuthority('assistant:user:save')")
     public Result<String> save(@RequestBody UserVO vo){
         userService.save(vo);
 
@@ -58,7 +57,7 @@ public class UserController {
 
     @PutMapping
     @Operation(summary = "修改")
-    @PreAuthorize("hasAuthority('assistant:user:update')")
+//    @PreAuthorize("hasAuthority('assistant:user:update')")
     public Result<String> update(@RequestBody @Valid UserVO vo){
         userService.update(vo);
 
@@ -67,7 +66,7 @@ public class UserController {
 
     @DeleteMapping
     @Operation(summary = "删除")
-    @PreAuthorize("hasAuthority('assistant:user:delete')")
+//    @PreAuthorize("hasAuthority('assistant:user:delete')")
     public Result<String> delete(@RequestBody List<Long> idList){
         userService.delete(idList);
 
