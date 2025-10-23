@@ -1,9 +1,9 @@
 package com.be.water.cbg.query;
 
+import com.be.water.framework.common.query.Query;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
-import net.ddm.framework.common.query.Query;
 
 import java.math.BigDecimal;
 import java.util.Date;

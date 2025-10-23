@@ -1,10 +1,12 @@
 package com.be.water.cbg.service;
 
-import net.ddm.framework.common.page.PageResult;
-import net.ddm.framework.common.service.BaseService;
-import net.ddm.ddm.vo.CbgAccountVO;
-import net.ddm.ddm.query.CbgAccountQuery;
-import net.ddm.ddm.entity.CbgAccountEntity;
+
+
+import com.be.water.cbg.entity.CbgAccountEntity;
+import com.be.water.cbg.query.CbgAccountQuery;
+import com.be.water.cbg.vo.CbgAccountVO;
+import com.be.water.framework.common.page.PageResult;
+import com.be.water.framework.common.service.BaseService;
 
 import java.util.List;
 

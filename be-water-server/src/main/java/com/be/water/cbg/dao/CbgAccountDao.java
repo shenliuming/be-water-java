@@ -1,7 +1,7 @@
 package com.be.water.cbg.dao;
 
-import net.ddm.framework.common.dao.BaseDao;
-import net.ddm.ddm.entity.CbgAccountEntity;
+import com.be.water.cbg.entity.CbgAccountEntity;
+import com.be.water.framework.common.dao.BaseDao;
 import org.apache.ibatis.annotations.Mapper;
 
 /**

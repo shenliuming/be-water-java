@@ -30,7 +30,6 @@ public class CbgAccountController {
 
     @GetMapping("page")
     @Operation(summary = "分页")
-    @PreAuthorize("hasAuthority('ddm:account:page')")
     public Result<PageResult<CbgAccountVO>> page(@Valid CbgAccountQuery query){
         PageResult<CbgAccountVO> page = cbgAccountService.page(query);
 
@@ -39,7 +38,6 @@ public class CbgAccountController {
 
     @GetMapping("{id}")
     @Operation(summary = "信息")
-    @PreAuthorize("hasAuthority('ddm:account:info')")
     public Result<CbgAccountVO> get(@PathVariable("id") Long id){
         CbgAccountEntity entity = cbgAccountService.getById(id);
 
@@ -48,7 +46,6 @@ public class CbgAccountController {
 
     @PostMapping
     @Operation(summary = "保存")
-    @PreAuthorize("hasAuthority('ddm:account:save')")
     public Result<String> save(@RequestBody CbgAccountVO vo){
         cbgAccountService.save(vo);
 
@@ -57,7 +54,6 @@ public class CbgAccountController {
 
     @PutMapping
     @Operation(summary = "修改")
-    @PreAuthorize("hasAuthority('ddm:account:update')")
     public Result<String> update(@RequestBody @Valid CbgAccountVO vo){
         cbgAccountService.update(vo);
 
@@ -66,7 +62,6 @@ public class CbgAccountController {
 
     @DeleteMapping
     @Operation(summary = "删除")
-    @PreAuthorize("hasAuthority('ddm:account:delete')")
     public Result<String> delete(@RequestBody List<Long> idList){
         cbgAccountService.delete(idList);
 
