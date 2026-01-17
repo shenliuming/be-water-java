@@ -1,7 +1,7 @@
 package com.be.water.system.service;
 
 import me.zhyd.oauth.model.AuthUser;
-import com.be.water.framework.mybatis.service.BaseService;
+import com.be.water.framework.common.service.BaseService;
 import com.be.water.system.entity.SysThirdLoginEntity;
 import com.be.water.system.vo.SysThirdLoginVO;
 

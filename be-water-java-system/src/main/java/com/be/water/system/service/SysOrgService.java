@@ -1,6 +1,6 @@
 package com.be.water.system.service;
 
-import com.be.water.framework.mybatis.service.BaseService;
+import com.be.water.framework.common.service.BaseService;
 import com.be.water.system.entity.SysOrgEntity;
 import com.be.water.system.vo.SysOrgVO;
 

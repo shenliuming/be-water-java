@@ -13,3 +13,4 @@ auth:
     - /be-water-generator/**
     - /short/**
     - /wx/**
+    - /assistant/**

@@ -1,7 +1,7 @@
 package com.be.water.market.service;
 
-import com.be.water.framework.common.utils.PageResult;
-import com.be.water.framework.mybatis.service.BaseService;
+import com.be.water.framework.common.page.PageResult;
+import com.be.water.framework.common.service.BaseService;
 import com.be.water.market.entity.WxUserEntity;
 import com.be.water.market.query.WxUserQuery;
 import com.be.water.market.vo.WxUserVO;

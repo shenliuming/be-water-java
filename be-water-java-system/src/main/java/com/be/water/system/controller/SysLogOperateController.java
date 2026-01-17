@@ -4,7 +4,7 @@ import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
-import com.be.water.framework.common.utils.PageResult;
+import com.be.water.framework.common.page.PageResult;
 import com.be.water.framework.common.utils.Result;
 import com.be.water.system.query.SysLogOperateQuery;
 import com.be.water.system.service.SysLogOperateService;

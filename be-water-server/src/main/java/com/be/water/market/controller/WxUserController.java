@@ -1,6 +1,6 @@
 package com.be.water.market.controller;
 
-import com.be.water.framework.common.utils.PageResult;
+import com.be.water.framework.common.page.PageResult;
 import com.be.water.framework.common.utils.Result;
 import com.be.water.market.convert.WxUserConvert;
 import com.be.water.market.entity.WxUserEntity;

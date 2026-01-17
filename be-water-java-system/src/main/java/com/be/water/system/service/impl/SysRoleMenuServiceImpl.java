@@ -2,7 +2,7 @@ package com.be.water.system.service.impl;
 
 import cn.hutool.core.collection.CollUtil;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
-import com.be.water.framework.mybatis.service.impl.BaseServiceImpl;
+import com.be.water.framework.common.service.impl.BaseServiceImpl;
 import com.be.water.system.dao.SysRoleMenuDao;
 import com.be.water.system.entity.SysRoleMenuEntity;
 import com.be.water.system.service.SysRoleMenuService;

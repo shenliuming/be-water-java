@@ -6,7 +6,7 @@ import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import lombok.AllArgsConstructor;
 import com.be.water.framework.common.exception.ErrorCode;
 import com.be.water.framework.common.exception.ServerException;
-import com.be.water.framework.mybatis.service.impl.BaseServiceImpl;
+import com.be.water.framework.common.service.impl.BaseServiceImpl;
 import com.be.water.framework.security.cache.TokenStoreCache;
 import com.be.water.framework.security.properties.SecurityProperties;
 import com.be.water.framework.security.user.UserDetail;

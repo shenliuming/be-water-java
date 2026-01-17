@@ -2,8 +2,8 @@ package com.be.water.system.service;
 
 import me.zhyd.oauth.request.AuthRequest;
 import com.be.water.framework.common.query.Query;
-import com.be.water.framework.common.utils.PageResult;
-import com.be.water.framework.mybatis.service.BaseService;
+import com.be.water.framework.common.page.PageResult;
+import com.be.water.framework.common.service.BaseService;
 import com.be.water.system.entity.SysThirdLoginConfigEntity;
 import com.be.water.system.vo.SysThirdLoginConfigVO;
 
